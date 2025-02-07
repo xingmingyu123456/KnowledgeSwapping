@@ -1,1 +1,1 @@
-"# KnowledgeSwapping" 
+# KnowledgeSwapping
