@@ -42,7 +42,7 @@ cd ../../..
 - **Learning Set:** 5 classes from CUB-200-2011, Stanford Dogs  
 - **Forgetting Set:** 5 classes from COCO  
 - **Retaining Set:** Remaining 75 classes from COCO  
-- [Download Link](https://pan.baidu.com/s/1dtDg-auQzwrZbeBder1o0g?pwd=fpdp)
+- [Download Link](https://pan.baidu.com/s/1zwks1vprri8bD7xhls-g3w?pwd=2dsi)
 
 ### Semantic Segmentation
 - **Learning Set:** 6 classes from VOC, COCO, Oxford-IIIT Pet, DeepGlobe Land  
@@ -53,7 +53,9 @@ cd ../../..
 
 ## Pretrained model
 VIT_B16 pretrained on imagenet100:[link]( https://pan.baidu.com/s/1tZtyi9KJ_ZAEXmvfKfYYoA?pwd=ih2g)
+
 DINO pretrained on COCO:[link](https://pan.baidu.com/s/1NPQuShq247_jgWAMaipT0A?pwd=tin8)
+
 Mask2Former pretrained on ADE20k:[link](https://pan.baidu.com/s/15VGwx9cNlFo3FajVC06Ckg?pwd=qj39)
 
 ## Image Classification
@@ -87,7 +89,7 @@ CUDA_VISIBLE_DEVICES=0 python3 -u train/exchange_fftl.py -b 80 -w 0 -d casia100 
 --forgetpath /forgetset/path --retainpath /retainset/path
 ```
 ## Object Detection
-Learning Before Forgetting
+first learn then forget
 ```angular2html
 cd object-detection
 CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 swapping_fltf_ddp.py \
@@ -104,7 +106,7 @@ use_ema=False dn_box_noise_scale=1.0 --forget_path /data1/xmy/DINO/data/coco0120
 --learn_path /data1/xmy/DINO/data/doglearn --remain_path /data1/xmy/DINO/data/coco0120/cocobench_remain \
 --output_dir /data1/xmy/DINO/logs/swin4c --save_log --find_unused_params
 ```
-Learning After Forgetting
+first forget then learn
 ```angular2html
 cd object-detection
 CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 swapping_fftl_ddp.py \
@@ -124,10 +126,12 @@ configs/ade20k/semantic-segmentation/swin/maskformer2_swin_base_IN21k_swap.yaml 
 --retainset /your/forgetset/path  MODEL.WEIGHTS /your/pretrained_model/path \
 SOLVER.IMS_PER_BATCH 6 OUTPUT_DIR /your/output_dir/path
 #example
-CUDA_VISIBLE_DEVICES=3,4 python swapping_fltf.py  --num-gpus 2 \
+CUDA_VISIBLE_DEVICES=4,5 python swapping_fltf.py  --num-gpus 2 \
 --config-file configs/ade20k/semantic-segmentation/swin/maskformer2_swin_base_IN21k_swap.yaml \
---learnsetname voc --learnset /data1/xmy/Mask2Former-main/voclearn --forgetset /data1/xmy/forgetsmall \
---retainset /data1/xmy/remainsmall MODEL.WEIGHTS /home/xmy/Mask2Former-250/exp/log/11-23-18-53/model_0002999.pth \
+--learnsetname voc --learnset /data1/xmy/Mask2Former-main/data/voclearn \
+--forgetset /home/xmy/code/Mask2Former-main/datasets/adebased/forgetsmall \
+--retainset /home/xmy/code/Mask2Former-main/datasets/adebased/remainsmall \
+MODEL.WEIGHTS /home/xmy/Mask2Former-250/exp/log/11-23-18-53/model_0002999.pth \
 SOLVER.IMS_PER_BATCH 6 OUTPUT_DIR /data1/xmy/Mask2Former-main/exp/log
 ```
 first forget then learn
