@@ -131,7 +131,7 @@ CUDA_VISIBLE_DEVICES=4,5 python swapping_fltf.py  --num-gpus 2 \
 --learnsetname voc --learnset /data1/xmy/Mask2Former-main/data/voclearn \
 --forgetset /home/xmy/code/Mask2Former-main/datasets/adebased/forgetsmall \
 --retainset /home/xmy/code/Mask2Former-main/datasets/adebased/remainsmall \
-MODEL.WEIGHTS /home/xmy/Mask2Former-250/exp/log/11-23-18-53/model_0002999.pth \
+MODEL.WEIGHTS /data1/xmy/Mask2Former-main/exp/log/11-23-18-53/model_0002999.pth \
 SOLVER.IMS_PER_BATCH 6 OUTPUT_DIR /data1/xmy/Mask2Former-main/exp/log
 ```
 first forget then learn

@@ -1420,7 +1420,7 @@ def learn(args):
         return res
     max_iter = cfg.SOLVER.MAX_ITER
     new_max_iter = max_iter - (max_iter % 1000)
-    cfg.MODEL.WEIGHTS = cfg.OUTPUT_DIR + "/" + f"learn_model_000{new_max_iter}.pth"
+    cfg.MODEL.WEIGHTS = cfg.OUTPUT_DIR + "/" + f"forget_model_000{new_max_iter}.pth"
     cfg.freeze()
     trainer = Trainer_learn(cfg)
     # args.resume = True
@@ -1529,8 +1529,8 @@ if __name__ == "__main__":
 
     # 日志文件夹更改
     for i,item in enumerate(args.opts):
-        if item == "exp/log" :
-            args.opts[i] = args.opts[i] + "/" + time_str
+        if item == "OUTPUT_DIR" :
+            args.opts[i+1] = args.opts[i+1] + "/" + time_str
 
     # args.opts[5] = args.opts[5] +"/"+ time_str
     port = random.randint(1000, 20000)
