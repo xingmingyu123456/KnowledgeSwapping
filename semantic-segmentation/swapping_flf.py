@@ -1345,7 +1345,7 @@ def setup(args):
     # for poly lr schedule
     add_deeplab_config(cfg)
     add_maskformer2_config(cfg)
-    cfg.INPUT.LEARN_DATASET_NAME = args.learnsetname
+    cfg.DATASETS.LEARN_DATASET_NAME = args.learnsetname
     cfg.merge_from_file(args.config_file)
     cfg.merge_from_list(args.opts)
     cfg.freeze()
