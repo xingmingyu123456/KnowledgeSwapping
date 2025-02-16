@@ -163,6 +163,16 @@ configs/ade20k/semantic-segmentation/swin/maskformer2_swin_base_IN21k_swap.yaml 
 SOLVER.IMS_PER_BATCH 6 OUTPUT_DIR /your/output_dir/path
 ```
 
+## Citation
+```
+@article{xing2025knowledge,
+  title={Knowledge Swapping via Learning and Unlearning},
+  author={Xing, Mingyu and Cheng, Lechao and Tang, Shenggeng and Wang, Yaxiong and Zhong, Zhun and Wang, Meng},
+  journal={arXiv preprint arXiv:2502.08075},
+  year={2025}
+}
+```
+
 ## Acknowledgments
 The code is partially from the below repos.
 
