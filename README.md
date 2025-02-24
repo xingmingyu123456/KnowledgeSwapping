@@ -1,5 +1,5 @@
 # KnowledgeSwapping
-This is the official code implementation of Knowledge Swapping via Learning and Unlearning. 
+This is the official code implementation of Knowledge Swapping via Learning and Unlearning(https://arxiv.org/pdf/2502.08075). 
 Knowledge Swapping is a novel
 task designed to selectively regulate knowledge
 of a pretrained model by enabling the forgetting
