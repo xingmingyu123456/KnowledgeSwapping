@@ -42,21 +42,21 @@ cd ../../..
 - **Learning Set:** 5 classes from CUB-200-2011, Stanford Dogs  
 - **Forgetting Set:** 5 classes from COCO  
 - **Retaining Set:** Remaining 75 classes from COCO  
-- [Download Link](https://pan.baidu.com/s/1zwks1vprri8bD7xhls-g3w?pwd=2dsi)
+- [Download Link](https://mailhfuteducn-my.sharepoint.com/:f:/g/personal/2022213423_mail_hfut_edu_cn/EkqbtJ21ezZMiKb2cuxAn3oBomEch45MAMQcFRYdm5jTcw?e=OIilWn)
 
 ### Semantic Segmentation
 - **Learning Set:** 6 classes from VOC, COCO, Oxford-IIIT Pet, DeepGlobe Land  
 - **Forgetting Set:** 5 classes from ADE20K  
 - **Retaining Set:** Remaining 145 classes from ADE20K
-- [Download Link](https://pan.baidu.com/s/1dtDg-auQzwrZbeBder1o0g?pwd=fpdp)  
+- [Download Link](https://mailhfuteducn-my.sharepoint.com/:f:/g/personal/2022213423_mail_hfut_edu_cn/ElNn_QcPYFZGg7HdVrQdvz8BPY7cHW1YHtjiaCAkUj21Aw?e=YaVDfP)  
 
 
 ## Pretrained model
-VIT_B16 pretrained on imagenet100:[link]( https://pan.baidu.com/s/1tZtyi9KJ_ZAEXmvfKfYYoA?pwd=ih2g)
+VIT_B16 pretrained on imagenet100:[link]( https://mailhfuteducn-my.sharepoint.com/:f:/g/personal/2022213423_mail_hfut_edu_cn/EkOrzUDf9wJFj4WPF9_uFgwBe9BNugCSdGgjMefhO6YCvw?e=hCkfeI)
 
-DINO pretrained on COCO:[link](https://pan.baidu.com/s/1NPQuShq247_jgWAMaipT0A?pwd=tin8)
+DINO pretrained on COCO:[link](https://mailhfuteducn-my.sharepoint.com/:f:/g/personal/2022213423_mail_hfut_edu_cn/EkepEZ2K0YpAjKxI1yzxGt0BgM66JTR3tyqUpzPwCC4_CQ?e=K47LCD)
 
-Mask2Former pretrained on ADE20k:[link](https://pan.baidu.com/s/15VGwx9cNlFo3FajVC06Ckg?pwd=qj39)
+Mask2Former pretrained on ADE20k:[link](https://mailhfuteducn-my.sharepoint.com/:f:/g/personal/2022213423_mail_hfut_edu_cn/EnQek4tbH8xFmsVc0unWbEgBAC27s_jIavy6wQC8edvDbQ?e=qTW3wG)
 
 ## Image Classification
 first learn then forget
