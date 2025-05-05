@@ -1,4 +1,4 @@
-# KnowledgeSwapping
+# Knowledge Swapping via Learning and Unlearning(ICML 2025)
 This is the official code implementation of Knowledge Swapping via Learning and Unlearning(https://arxiv.org/pdf/2502.08075). 
 Knowledge Swapping is a novel
 task designed to selectively regulate knowledge
