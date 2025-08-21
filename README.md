@@ -48,7 +48,7 @@ cd ../../..
 - **Learning Set:** 6 classes from VOC, COCO, Oxford-IIIT Pet, DeepGlobe Land  
 - **Forgetting Set:** 5 classes from ADE20K  
 - **Retaining Set:** Remaining 145 classes from ADE20K
-- [Download Link](https://mailhfuteducn-my.sharepoint.com/:f:/g/personal/2022213423_mail_hfut_edu_cn/ElNn_QcPYFZGg7HdVrQdvz8BPY7cHW1YHtjiaCAkUj21Aw?e=YaVDfP)  
+- [Download Link](https://mailhfuteducn-my.sharepoint.com/:f:/g/personal/2022213423_mail_hfut_edu_cn/ElNn_QcPYFZGg7HdVrQdvz8BBhX0nGu1vn32S-PhT9o1AQ?e=9aXMrG)  
 
 
 ## Pretrained model
