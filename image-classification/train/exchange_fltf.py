@@ -632,7 +632,7 @@ if __name__ == "__main__":
     )
     wandb.log({"norm_list-{}".format(0): norm_list})
 
-    # 提升秘诀
+    
     remain_dataset_train_sub=MergedDataset(remain_dataset_train_sub, train_learn_dataset)
     train_loader_remain = torch.utils.data.DataLoader(
         remain_dataset_train_sub,
@@ -703,23 +703,7 @@ if __name__ == "__main__":
     wandb.log({"norm_list-{}".format(0): norm_list})
 
 
-    # test for old classes after training task_i
-    # save the model after one task training
-    # 评估老数据集 保存权重
-    # bug 这样保存最后会更新参数 导致测试结果变差
-    # if args.one_stage:
-    #     BACKBONE.eval()
-    #     current_time=datetime.now()
-    #     time_str = current_time.strftime("%Y-%m-%d-%H-%M-%S")
-    #     os.makedirs(os.path.join(WORK_PATH, "task-level"), exist_ok=True)
-    #     torch.save(
-    #         BACKBONE.state_dict(),
-    #         f"./forget_check/forget_final.pth"
-    #         # os.path.join(
-    #         #     WORK_PATH, "task-level", "backbone{}.pth".format(time_str)
-    #         # ),
-    #     )
-    #     # BACKBONE.train()
+    
 
 
 
