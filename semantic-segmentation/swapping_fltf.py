@@ -1147,21 +1147,17 @@ if __name__ == "__main__":
     # print("Command Line Args:", args)
     # print("pwd:", os.getcwd())
 
-    # print("持续学习开始了")
-    # launch(
-    #     learn,
-    #      args.num_gpus,
-    #     num_machines=args.num_machines,
-    #     machine_rank=args.machine_rank,
-    #     dist_url=args.dist_url,
-    #     args=(args,),
-    # )
-    # 这个太危险了
-    # torch.cuda.empty_cache()
-    # for i in range(2):
-    #     torch.cuda.set_device(i)
-    #     torch.cuda.empty_cache()  #在多GPU，你可以使用这个来清理指定设备的显存
-    print("遗忘开始了")
+    print("持续学习开始了")
+    launch(
+        learn,
+         args.num_gpus,
+        num_machines=args.num_machines,
+        machine_rank=args.machine_rank,
+        dist_url=args.dist_url,
+        args=(args,),
+    )
+   
+   
     launch(
         forget,
         args.num_gpus,
