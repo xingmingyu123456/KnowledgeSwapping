@@ -36,7 +36,7 @@ cd ../../..
 - **Retaining Set:** Remaining 95 classes from ImageNet100  
 - Download Links 
   - 5 classes: [link](https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2022213423_mail_hfut_edu_cn/EekTshGwCr5JmwQZPv4UOSsBecHKQ8Qu5w3EXhvoWLfP4A?e=v9SNZA)  
-  - 10 classes: [link](https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2022213423_mail_hfut_edu_cn/Ee4hedQXjHdCh47mkOntmeEBOGxBUoc3OIxVwohsPNKa6g?e=elIt9b)
+  - 10 classes: [link](https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2022213423_mail_hfut_edu_cn/ESeVZ9lejgRErsH9pyGQdJsBD9ljz33GriKPuSdf6CTmiw?e=s9MhWk)
 
 ### Object Detection
 - **Learning Set:** 5 classes from CUB-200-2011, Stanford Dogs  
